@@ -1,7 +1,7 @@
 
 public class BankAccountDAO {
 
-	public void save(BankAccountDTO capture) {
+	public void save(BankAccountDTO accountDTO) {
 		// TODO Auto-generated method stub
 		
 	}

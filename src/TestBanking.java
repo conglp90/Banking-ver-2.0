@@ -30,6 +30,7 @@ public class TestBanking {
 	  @Test
 	    public void OpenAccountMustSaveNewAccountToDB() {
 	    	ArgumentCaptor<BankAccountDTO> accountDTOCaptor = ArgumentCaptor.forClass(BankAccountDTO.class);
+	    	
 	    	BankAccount.openAccount("1234567890");
 	    	
 	    	verify(accountDao,times(1)).save(accountDTOCaptor.capture());
